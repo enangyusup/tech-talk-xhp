@@ -1,0 +1,35 @@
+Apa itu xhp
+  pengertian
+  sejarah
+  perkembangan
+
+Kenapa harus xhp / problema
+  bosen dengan blade - 
+  mempermudah membaca element
+  reusable
+  mengurangi kesahalan ketik kurang tag mempermudah test dengan tdd
+  browser terlalu baik hati menambahkan tag jika salah
+  rendering lebih cepat
+  mempermudah pencarian element
+
+Kelebihan dan kekurangan
+  Menggunakan tag html sesuai dengan semantic html5 misal li didalam a
+
+Gambar skema liputan6
+
+Gambar mencari komponen
+
+Impelementasi
+  layout
+  element
+
+Demo
+
+Benefit
+Validasi Parse-waktu sintaks HTML. XHP memvalidasi sintaks dan struktur pohon dokumen seluruh pada render dan akan melemparkan pengecualian jika elemen tidak ditutup dengan benar, memiliki anak yang tidak valid, memiliki atribut yang tidak valid, atau hilang anak-anak atau atribut yang diperlukan.
+
+Perlindungan XSS otomatis. Karena semua render ke halaman dilakukan dalam XHP, dan ia tahu apa yang HTML dan apa yang konten, XHP lolos semua konten tanpa upaya khusus dari programmer.
+
+Objek mutasi. Benda XHP disimpan sebagai objek PHP standar, sehingga mereka dapat dimanipulasi melalui DOM seperti API, yang mencakup metode seperti setAttribute (), getAttribute (), appendChild (), dan beberapa orang lain sebelum atau selama render.
+
+HTML kustom. Alih-alih fungsi menulis untuk menghasilkan HTML, atau beralih masuk dan keluar dari PHP, elemen XHP kustom dapat didefinisikan dan dicampur dengan elemen HTML standar yang akan abstrak keluar struktur HTML biasa.

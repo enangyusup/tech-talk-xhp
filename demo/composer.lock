@@ -1,0 +1,66 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "5d90f35442fed507c9d71e3a7b708286",
+    "packages": [
+        {
+            "name": "facebook/xhp-lib",
+            "version": "dev-hack",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/facebook/xhp-lib.git",
+                "reference": "1f14c6a71b67a7ff084ad652756d44d17733b8c6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/facebook/xhp-lib/zipball/1f14c6a71b67a7ff084ad652756d44d17733b8c6",
+                "reference": "1f14c6a71b67a7ff084ad652756d44d17733b8c6",
+                "shasum": ""
+            },
+            "require": {
+                "hhvm": "*"
+            },
+            "require-dev": {
+                "91carriage/phpunit-hhi": "4.5.*",
+                "phpunit/phpunit": "4.5.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-hack": "2.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Class library for XHP",
+            "homepage": "https://github.com/facebook/xhp-lib",
+            "keywords": [
+                "facebook",
+                "hack",
+                "hhvm",
+                "xhp"
+            ],
+            "time": "2015-03-12 22:40:40"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "facebook/xhp-lib": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
