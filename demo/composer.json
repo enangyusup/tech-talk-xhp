@@ -1,5 +1,13 @@
 {
   "require": {
     "facebook/xhp-lib": "2.x-dev"
+  },
+
+  "autoload": {
+    "classmap": [
+      "components",
+      "class"
+    ]
   }
+
 }

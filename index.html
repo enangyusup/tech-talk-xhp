@@ -40,333 +40,250 @@
       </section>
 
       <section>
-        <h2>Apa itu XHP</h2>
-        <p>
-          XHP is an augmentation of PHP developed at Facebook to allow XML syntax for the purpose of creating custom and reusable HTML elements.
-        </p>
-      </section>
-
-      <section>
-        <h2>Benefit</h2>
-        <p>
-          XHP offers a much cleaner interface to UI programming when outputting HTML in PHP, but has some engineering advantages as well.
-        </p>
-Parse-time validation of HTML syntax. XHP validates the syntax and structure of the entire document tree on render and will throw an exception if an element was not closed properly, has invalid children, has an invalid attribute, or is missing required children or attributes.
-Automatic XSS protection. Because all rendering to the page is done inside XHP, and it knows what is HTML and what is content, XHP escapes all content without any special effort from the programmer.
-Object mutation. XHP objects are stored as standard PHP objects, so they can be manipulated through a DOM-like API, which includes methods such as setAttribute(), getAttribute(), appendChild(), and several others prior to or during render.
-Custom HTML. Instead of writing functions to generate HTML, or switching in and out of PHP, custom XHP elements can defined and mixed in with standard HTML elements that will abstract out common HTML structures.
-
-      </section>
-
-      <!-- Example of nested vertical slides -->
-      <section>
         <section>
-          <h2>Vertical Slides</h2>
-          <p>Slides can be nested inside of each other.</p>
-          <p>Use the <em>Space</em> key to navigate through all slides.</p>
-          <br>
-          <a href="#" class="navigate-down">
-            <img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-          </a>
-        </section>
-        <section>
-          <h2>Basement Level 1</h2>
-          <p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-        </section>
-        <section>
-          <h2>Basement Level 2</h2>
-          <p>That's it, time to go back up.</p>
-          <br>
-          <a href="#/2">
-            <img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-          </a>
-        </section>
-      </section>
-
-      <section>
-        <h2>Slides</h2>
-        <p>
-          Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-        </p>
-      </section>
-
-      <section>
-        <h2>Point of View</h2>
-        <p>
-          Press <strong>ESC</strong> to enter the slide overview.
-        </p>
-        <p>
-          Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-        </p>
-      </section>
-
-      <section>
-        <h2>Touch Optimized</h2>
-        <p>
-          Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-        </p>
-      </section>
-
-      <section data-markdown>
-        <script type="text/template">
-          ## Markdown support
-
-          Write content using inline or external Markdown.
-          Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-          ```
-          <section data-markdown>
-            ## Markdown support
-
-            Write content using inline or external Markdown.
-            Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-          </section>
-          ```
-        </script>
-      </section>
-
-      <section>
-        <section id="fragments">
-          <h2>Fragments</h2>
-          <p>Hit the next arrow...</p>
-          <p class="fragment">... to step through ...</p>
-          <p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-          <aside class="notes">
-            This slide has fragments which are also stepped through in the notes window.
-          </aside>
-        </section>
-        <section>
-          <h2>Fragment Styles</h2>
-          <p>There's different types of fragments, like:</p>
-          <p class="fragment grow">grow</p>
-          <p class="fragment shrink">shrink</p>
-          <p class="fragment roll-in">roll-in</p>
-          <p class="fragment fade-out">fade-out</p>
-          <p class="fragment current-visible">current-visible</p>
-          <p class="fragment highlight-red">highlight-red</p>
-          <p class="fragment highlight-blue">highlight-blue</p>
-        </section>
-      </section>
-
-      <section id="transitions">
-        <h2>Transition Styles</h2>
-        <p>
-          You can select from different transitions, like: <br>
-          <a href="?transition=none#/transitions">None</a> -
-          <a href="?transition=fade#/transitions">Fade</a> -
-          <a href="?transition=slide#/transitions">Slide</a> -
-          <a href="?transition=convex#/transitions">Convex</a> -
-          <a href="?transition=concave#/transitions">Concave</a> -
-          <a href="?transition=zoom#/transitions">Zoom</a>
-        </p>
-      </section>
-
-      <section id="themes">
-        <h2>Themes</h2>
-        <p>
-          reveal.js comes with a few themes built in: <br>
-          <!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-          <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-          <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-          <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-          <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-          <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-          <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-          <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-          <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-          <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-          <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-        </p>
-      </section>
-
-      <section>
-        <section data-background="#dddddd">
-          <h2>Slide Backgrounds</h2>
+          <h2>Whats Is Xhp ?</h2>
           <p>
-            Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
+            XHP is an augmentation of PHP developed at Facebook to allow XML syntax for the purpose of creating custom and reusable HTML elements.
           </p>
-          <a href="#" class="navigate-down">
-            <img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-          </a>
         </section>
-        <section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-          <h2>Image Backgrounds</h2>
-          <pre><code>&lt;section data-background="image.png"&gt;</code></pre>
+        <section>
+          <h2>Originin</h2>
+          <p>
+            XHP was loosely inspired by ECMAScript for XML[1] and created by Marcel Laverdet. It was first developed for Facebook Lite as a new UI rendering layer but was later ported over to Facebook's www and mobile web stack as well as incorporated into HipHop for PHP. It was made available to the public in February 2010 and now accounts for nearly all of Facebook's server-side generated HTML over all of its properties.
+          </p>
         </section>
-        <section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-          <h2>Tiled Backgrounds</h2>
-          <pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-        </section>
-        <section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-          <div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-            <h2>Video Backgrounds</h2>
-            <pre><code style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-          </div>
-        </section>
-      </section>
-
-      <section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-        <h2>Background Transitions</h2>
-        <p>
-          Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-        </p>
-        <pre><code>Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-      </section>
-
-      <section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-        <h2>Background Transitions</h2>
-        <p>
-          You can override background transitions per-slide.
-        </p>
-        <pre><code style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
       </section>
 
       <section>
-        <h2>Pretty Code</h2>
-        <pre><code data-trim contenteditable>
-function linkify( selector ) {
-if( supports3DTransforms ) {
+        <section>
+          <h2>Why Using Xhp?</h2>
+        </section>
+        <section id="fragments">
+          <h3>1 - Tidak ada dokumentasi UI component.</h3>
+          <p class="fragment">
+            <img src="images/cari-file-langkah-0.png" />
+          </p>
+        </section>
+        <section>
+          <h5>Langkah 1</h5>
+          <img src="images/cari-file-langkah-1.png" />
+        </section>
+        <section>
+          <h5>Langkah 2</h5>
+          <pre><code data-trim contenteditable>
+              php artisan routes | grep indeks
+          </code></pre>
+          <img src="images/cari-file-langkah-2.png" />
+        </section>
+        <section>
+          <h5>Langkah 3</h5>
+          <pre><code data-trim contenteditable>
+              vim app/controller/IndeksController
+          </code></pre>
+          <img src="images/cari-file-langkah-3.png" />
+        </section>
+        <section>
+          <h5>Langkah 4</h5>
+          <pre><code data-trim contenteditable>
+              vim app/views/categories/index.blade.php
+          </code></pre>
+          <img src="images/cari-file-langkah-4.png" />
+        </section>
+        <section>
+          <h5>Langkah 5</h5>
+          <pre><code data-trim contenteditable>
+              vim app/views/categories/articles/default.blade.php
+          </code></pre>
+          <img src="images/cari-file-langkah-5.png" />
+        </section>
+        <section>
+          <blockquote cite="http://liputan6.com">
+          <h4>"Jangan Buang Masa.... 😡"</h4>
+          </blockquote>
+        </section>
+        <section>
+          <img src="images/disitu-kadang-merasa-sedih.jpg" />
+        </section>
+        <section>
+          <h1>Yang saya mau</h1>
+        </section>
+        <section>
+          <img src="images/yang-saya-mau.png" />
+        </section>
+        <section>
+          <blockquote cite="http://liputan6.com">
+            <h1>"HAHA"</h1>
+          </blockquote>
+        </section>
 
-  var nodes = document.querySelectorAll( selector );
+        <section>
+          <h3>2 - Duplicate View</h3>
+          <p>
+            <img src="images/duplicate-view.png" />
+          </p>
+        </section>
 
-  for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-    var node = nodes[i];
+        <section>
+          <h3>3 - Lupa tutup tag</h3>
+          <pre class="fragment"><code data-trim contenteditable>
+           <article id="article_2210860" class="ads-article">
 
-    if( !node.className ) {
-      node.className += ' roll';
-    }
+    <figure class="thumbnails">
+      <a class="tracking" href="http://berita-bca.liputan6.com/read/2210860/bca-dukung-program-laku-pandai-ojk">
+        <img alt="BCA Dukung Program Laku Pandai OJK " src="" class="small" />
+              </a>
+    </figure>
+
+    <aside>
+      <header>
+        <a href="http://berita-bca.liputan6.com" class="category-label tracking">
+          Berita BCA
+        </a>
+        <span class="label-datetime">
+          <i class="fa fa-clock-o"></i>
+                  <time class="timeago" datetime="2015-04-10T01:31:10+07:00"> 10 Apr 2015 01:31 </time>
+                </span>
+        <h4>
+          <a href="http://berita-bca.liputan6.com/read/2210860/bca-dukung-program-laku-pandai-ojk">
+            BCA Dukung Program Laku Pandai OJK 
+                      </a>
+        </h4>
+      </header>
+    </aside>
+  </article>
+
+          </code></pre>
+        </section>
+
+      </section>
+
+      <section id="benefit">
+        <section>
+          <h2>Benefit</h2>
+          <p>
+            XHP offers a much cleaner interface to UI programming when outputting HTML in PHP, but has some engineering advantages as well.
+          </p>
+        </section>
+
+        <section id="benefit1">
+          <h3>
+            Parse-time validation of HTML syntax.
+          </h3>
+          </p>
+          <p class="fragment">
+            XHP validates the syntax and structure of the entire document tree on render and will throw an exception if an element was not closed properly, has invalid children, has an invalid attribute, or is missing required children or attributes.
+            <pre class="fragment"><code data-trim contenteditable>
+              <h2><div class="title">Title</div></h2>
+            </code></pre>
+          </p>
+        </section>
+        <section id="benefit2">
+          <h3>
+            Automatic XSS protection.
+          </h3>
+          </p>
+          <p class="fragment">
+            Because all rendering to the page is done inside XHP, and it knows what is HTML and what is content, XHP escapes all content without any special effort from the programmer.
+          </p>
+          <pre class="fragment"><code data-trim contenteditable>
+            echo '<div>Hello '.htmlspecialchars($_GET['name']).'</div>';
+          </code></pre>
+          <pre class="fragment"><code data-trim contenteditable>
+            echo <div>Hello {$_GET['name']}</div>;
+          </code></pre>
+
+        </section>
+
+        <section id="benefit3">
+          <h3>
+            Object mutation.
+          </h3>
+          </p>
+          <p class="fragment">
+            <small>XHP objects are stored as standard PHP objects, so they can be manipulated through a DOM-like API, which includes methods such as setAttribute(), getAttribute(), appendChild(), and several others prior to or during render.</small>
+          </p>
+          <p class="fragment">
+            <img src="images/articleList-xhp.png" />
+          </p>
+        </section>
+
+        <section id="benefit4">
+          <h3>
+            Custom HTML.
+          </h3>
+          </p>
+          <p class="fragment">
+            Instead of writing functions to generate HTML, or switching in and out of PHP, custom XHP elements can defined and mixed in with standard HTML elements that will abstract out common HTML structures.
+          </p>
+          <p class="fragment">
+            <img src="images/abstract-class.png" />
+          </p>
+        </section>
+
+      </section>
+
+      <section>
+        <section>
+        <h2>Installation</h2>
+        </section>
+        <section>
+          <h2>Require HHVM</h2>
+          <p>Installation on Archlinux</p>
+          <pre><code data-trim contenteditable>
+# pacman -S hhvm
+# systemctl start hhvm
+          </code></pre>
+          <p>run hhvm on lighttpd</p>
+          <pre><code data-trim contenteditable>
+/etc/lighttpd/lighttpd.conf
+..
+fastcgi.server = (
+  ".php" => (
+     "localhost" => (
+       "host" => "127.0.0.1",
+       "port" => "9000",
+       "broken-scriptfilename" => "enable",
+    )
+  )
+)
+..
+          </code></pre>
+          <pre><code data-trim contenteditable>
+# systemctl start lighttpd
+          </code></pre>
+        </section>
+        <section>
+          <h2>Installation XHP</h2>
+          <pre><code data-trim contenteditable>
+{
+  "require": {
+    "facebook/xhp-lib": "2.x-dev"
+  },
+
+  "autoload": {
+    "classmap": [
+      "components",
+      "class"
+    ]
   }
 }
-}
-        </code></pre>
-        <p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
+          </code></pre>
+          <p>
+            put file .hhconfig on document root
+            <pre><code data-trim contenteditable>
+              $ touch .hhconfig
+            </code></pre>
+          </p>
+        </section>
       </section>
 
       <section>
-        <h2>Marvelous List</h2>
-        <ul>
-          <li>No order here</li>
-          <li>Or here</li>
-          <li>Or here</li>
-          <li>Or here</li>
-        </ul>
+        <h2>Demo</h2>
       </section>
 
       <section>
-        <h2>Fantastic Ordered List</h2>
-        <ol>
-          <li>One is smaller than...</li>
-          <li>Two is smaller than...</li>
-          <li>Three!</li>
-        </ol>
-      </section>
-
-      <section>
-        <h2>Tabular Tables</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Item</th>
-              <th>Value</th>
-              <th>Quantity</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Apples</td>
-              <td>$1</td>
-              <td>7</td>
-            <tr>
-            <tr>
-              <td>Lemonade</td>
-              <td>$2</td>
-              <td>18</td>
-            <tr>
-            <tr>
-              <td>Bread</td>
-              <td>$3</td>
-              <td>2</td>
-            <tr>
-          </tbody>
-        </table>
-      </section>
-
-      <section>
-        <h2>Clever Quotes</h2>
-        <p>
-          These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-          &ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-        </p>
-        <blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-          &ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-          reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-        </blockquote>
-      </section>
-
-      <section>
-        <h2>Intergalactic Interconnections</h2>
-        <p>
-          You can link between slides internally,
-          <a href="#/2/3">like this</a>.
-        </p>
-      </section>
-
-      <section>
-        <h2>Speaker View</h2>
-        <p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-        <p>Press the <em>S</em> key to try it out.</p>
-
-        <aside class="notes">
-          Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-        </aside>
-      </section>
-
-      <section>
-        <h2>Global State</h2>
-        <p>
-          Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-          will be added as a class to the document element when the slide is open. This lets you
-          apply broader style changes, like switching the page background.
-        </p>
-      </section>
-
-      <section data-state="customevent">
-        <h2>State Events</h2>
-        <p>
-          Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-        </p>
-        <pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-console.log( '"customevent" has fired' );
-} );
-        </code></pre>
-      </section>
-
-      <section>
-        <h2>Take a Moment</h2>
-        <p>
-          Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-        </p>
-      </section>
-
-      <section>
-        <h2>Much more</h2>
-        <ul>
-          <li>Right-to-left support</li>
-          <li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-          <li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-          <li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-          <li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-        </ul>
-      </section>
-
-      <section style="text-align: left;">
-        <h1>THE END</h1>
-        <p>
-          - <a href="http://slides.com">Try the online editor</a> <br>
-          - <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-        </p>
+        <h2>Thanks</h2>
+        <small>enang.yusup</small>
       </section>
 
     </div>

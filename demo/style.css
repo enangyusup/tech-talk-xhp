@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  width: 500px;
+  padding: 10px;
+  margin: 20px;
+  border: 1px solid #ccc;
+}
+
+header.title {
+  border-bottom: 2px solid #ccc;
+}
+
+header.title h3 {
+  display:  inline-block;
+}
+
+span.more {
+  float: right;
+}
+
+figure.thumbnails {
+  float: left;
+  width: 237px;
+  margin-right: 20px;
+}
+aside {
+  float: left;
+}
+aside h2 {
+  border-bottom: 2px solid #ccc;
+  width: 236px;
+}
+
+img.small {
+    width: 100%;
+}
+article {
+  clear: both;
+  padding-top: 20px;
+}
+.clear {
+  clear: both;
+}
